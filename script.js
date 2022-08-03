@@ -91,9 +91,19 @@ class ColorPalletteObject
         ];
     }
     debugColors()
-        {
-            console.log(this);
-        }
+    {
+        console.log(this);
+    }
+    linkPallette(className)
+    {
+        const container = document.querySelectorAll(className);
+        console.log(container);
+        container.forEach( (box) =>{
+            let boxID = box.id;
+            console.log(boxID);
+            //box.setAttribute('style', `background-color: `);
+        })
+    }
 }
 
 class BrushObject
@@ -107,5 +117,6 @@ function brushObject(size)
 
 colorPallette = new ColorPalletteObject();
 etchBoard = new EtchBoardObject(128);
-colorPallette.debugColors();
-etchBoard.debugBoard();
+//colorPallette.debugColors();
+//etchBoard.debugBoard();
+colorPallette.linkPallette(".colorHolder");
