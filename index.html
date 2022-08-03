@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="headerSection">
+        <h1>ETCH-A-SKETCH!</h1>
+    </div>
+
+    <div id="bodySection">
+        <div id="appSection">
+
+            <div id="appSidebar">
+                <button class="sidebarButton" id="eraser">ERASER</button>
+                <button class="sidebarButton" id="fillBucket">FILL BUCKET</button>
+                <button class="sidebarButton" id="pencil">PENCIL</button>
+                <button class="sidebarButton" id="sprayPaint">SPRAY PAINT</button>
+                <button class="sidebarButton" id="lineTool">LINE TOOL</button>
+                <button class="sidebarButton" id="rainbowBrush">RAINBOW BRUSH</button>
+                <button class="sidebarButton" id="dropperTool">DROPPER TOOL</button>
+                <button class="sidebarButton" id="undo">UNDO</button>
+            </div>
+
+            <div id="canvasSizeSelector">
+                CANVAS SIZE: VALUE
+                <input type="range" class="slider-square" id="canvasSlider">
+            </div>
+
+            <div id="currentColorHUD">
+                CURRENT COLOR
+                <div id="currentColor">
+                </div>
+            </div>
+
+            <div id="pallette">
+            </div>
+
+        </div>
+        <div id="boardAREA">
+            <div id="board">
+            </div>
+        </div>
+    </div>
+
+    <div id="footersection">
+    </div>
+
+</body>
+</html>

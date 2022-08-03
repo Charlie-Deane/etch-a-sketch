@@ -1,0 +1,139 @@
+/* 
+
+DRACULA COLOR THEME:
+Background	    #282a36	
+Current Line	#44475a	
+Foreground	    #f8f8f2	
+Comment	        #6272a4	
+Cyan	        #8be9fd	
+Green	        #50fa7b	
+Orange	        #ffb86c	
+Pink	        #ff79c6	
+Purple	        #bd93f9	
+Red	            #ff5555	
+Yellow	        #f1fa8c
+
+*/
+
+body{
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: #f1fa8c;
+    text-shadow: 4px 4px #6272a4;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+#headerSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style:solid;
+    border-color: #44475a;
+    margin-bottom: 10px;
+}
+
+.sidebarButton{
+    background-color: #44475a;
+    color: #f1fa8c;
+    font-size: 20px;
+    border-width: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px #6272a4;
+    border-color: #44475a;
+}
+
+#appSidebar{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-style:solid;
+    border-color: #44475a;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#canvasSizeSelector{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-style:solid;
+    border-color: #44475a;
+    padding: 10px;
+    align-items: center;
+    font-weight: bold;
+    color: #f1fa8c;
+    text-shadow: 1px 1px #6272a4;
+    margin-bottom: 10px;
+}
+
+.slider-square{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #f8f8f2; /* White background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin-top: 10px;
+}
+
+.slider-square::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    width: 10px;
+    background: #ff79c6;
+    cursor: default;
+}
+
+.slider-square::-webkit-slider-thumb::-moz-range-thumb{
+    background: #ff79c6;
+    height: 10px;
+    width: 10px;
+    cursor: default;
+}
+
+#currentColorHUD{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-style:solid;
+    border-color: #44475a;
+    padding: 10px;
+    align-items: center;
+    font-weight: bold;
+    color: #f1fa8c;
+    text-shadow: 1px 1px #6272a4;
+    margin-bottom: 10px;
+}
+
+#currentColor{
+    height: 130px;
+    width: 130px;
+    background-color: #000000;
+    margin-bottom: -5px;
+}
+
+#pallette{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-style:solid;
+    border-color: #44475a;
+    padding: 10px;
+    align-items: center;
+    font-weight: bold;
+    color: #f1fa8c;
+    text-shadow: 1px 1px #6272a4;
+    margin-bottom: 10px;
+}
