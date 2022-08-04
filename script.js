@@ -97,13 +97,17 @@ class ColorPalletteObject
     linkPallette(className)
     {
         const container = document.querySelectorAll(className);
+        const activeColor = document.getElementById("currentColor")
         console.log(container);
         container.forEach( (box) =>{
             let boxID = box.id;
             let index = boxID.replace(/\D/g, '');
             index = Number(index) - 1;
             box.setAttribute('style', `background-color: ${this.colorArray[index]};`);
-        })
+            box.addEventListener('click', () =>{
+                activeColor.setAttribute('style', `background-color: ${this.colorArray[index]};`);
+            });
+        });
     }
 }
 
