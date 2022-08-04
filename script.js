@@ -20,6 +20,7 @@ class EtchBoardObject
     }
     drawBoard()
     {
+
     }
 }
 
@@ -98,7 +99,6 @@ class ColorPalletteObject
     {
         const container = document.querySelectorAll(className);
         const activeColor = document.getElementById("currentColor")
-        console.log(container);
         container.forEach( (box) =>{
             let boxID = box.id;
             let index = boxID.replace(/\D/g, '');
@@ -115,13 +115,16 @@ class BrushObject
 {
 }
 
-function brushObject(size)
+function getCanvasSizePoints()
 {
-
+    let slider = document.getElementById("canvasSlider");
+    let sliderOutput = document.getElementById("rangevalue");
+    slider.addEventListener('input', () =>{
+        console.log(Number(sliderOutput.textContent));
+        return Number(sliderOutput.textContent);
+    });
 }
 
 colorPallette = new ColorPalletteObject();
-etchBoard = new EtchBoardObject(128);
-//colorPallette.debugColors();
-//etchBoard.debugBoard();
 colorPallette.linkPallette(".colorHolder");
+getCanvasSizePoints();
