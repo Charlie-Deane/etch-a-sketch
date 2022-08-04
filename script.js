@@ -100,8 +100,9 @@ class ColorPalletteObject
         console.log(container);
         container.forEach( (box) =>{
             let boxID = box.id;
-            console.log(boxID);
-            //box.setAttribute('style', `background-color: `);
+            let index = boxID.replace(/\D/g, '');
+            index = Number(index) - 1;
+            box.setAttribute('style', `background-color: ${this.colorArray[index]};`);
         })
     }
 }
